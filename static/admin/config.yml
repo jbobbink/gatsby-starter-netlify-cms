@@ -29,6 +29,12 @@ collections:
 
   - name: "pages"
     label: "Pages"
+    create: true
+    fields:
+      - {label: "Page Template Key", name: "templateKey", widget: "hidden", default: "new-page"}
+      - {label: "Page Title", name: "title", widget: "string"}
+      - {label: "Page Publish Date", name: "date", widget: "datetime"}
+      - {label: "Page Description", name: "description", widget: "text"}
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
